@@ -1,29 +1,37 @@
-
-
 ![Logo](https://github.com/imaginebig/entrevista-tecnica/blob/main/logoib.png?raw=true)
 
 # Entrevista Técnica Innovación y Desarrollo
-  Estamos muy contentos  de que estes interesado/a en sumarte a nuestro equipo! 
-  Por eso esperamos que puedas completar este breve examen técnico para conocer de lo que sos capaz!
- 
+
+Estamos muy contentos de que estes interesado/a en sumarte a nuestro equipo!
+Por eso esperamos que puedas completar este breve examen técnico para conocer de lo que sos capaz!
+
 ### Algoritmos - JavaScript
+
 - A) Crear un algoritmo que muestre los números pares entre el 0 y el 100.
-- B) JavaScript ES6: Dados los siguientes array's, imprimir por consola los elementos del array “y” que no se encuentran en el array “x” utilizando para tal fin una única línea de código. 
+- B) JavaScript ES6: Dados los siguientes array's, imprimir por consola los elementos del array “y” que no se encuentran en el array “x” utilizando para tal fin una única línea de código.
 
 ```bash
-const x = ["n", "bro", "c", "|"]; 
+const x = ["n", "bro", "c", "|"];
 const y = ["d", "n", "l", "bro", "g"];
-// Tu código aquí -> (...)
-console.log( ... );
+// Tu código aquí -> (
+  for (let i = 0; i <= 100; i++) {
+    if (i % 2 === 0) {
+      console.log(i);
+    }
+  }
+)
+console.log(y.map((e) => (!x.includes(e) ? e : null)).filter((e) => e !== null)));
 ```
 
 ### Frontend - React JS
-Según el diseño de figma, plasmar en código, un listado de productos con búsqueda por nombre y código de producto. 
+
+Según el diseño de figma, plasmar en código, un listado de productos con búsqueda por nombre y código de producto.
 Los productos pueden venir de un array almacenado en una variable.
 
 Simular un tiempo de respuesta de 3 segundos con un setTimeOut Se valora el manejo de estados entre componentes, uso de hooks y estilos.
 
 ## 🔗 Links
+
 [Diseño de figma](https://www.figma.com/file/Wik75QqHegwHcBIQTwhPWs/Innovaci%C3%B3n-y-desarrollo---Imagine-Big?node-id=0%3A1&t=AKC1mOHlHfyzKGn0-1)
 
 ### Listado de productos
@@ -40,7 +48,7 @@ export const productos = [
     stock: 50
   },
 
-  { 
+  {
     id: 'CODE002',
     name: 'NOTEBOOK ASUS X515MA INTEL CELERON N4020 8GB 240GB 15.6 FREE',
     desc: 'Ya sea para trabajar o jugar, el ASUS X515 es el computador portátil que ofrece un potente rendimiento y efectos visuales envolventes. Su pantalla NanoEdge cuenta con amplios ángulos de visión de 178° y un recubrimiento antirreflejos mate para tener una experiencia verdaderamente atractiva.',
@@ -93,7 +101,7 @@ export const productos = [
     stock: 50
   },
 
-  { 
+  {
     id: 'CODE008',
     name: 'NOTEBOOK DELL VOSTRO 3500 I3 1115G4 8GB 1TB SSD 240GB 15.6 UBUNTU',
     desc: '* Este equipo posee un agregado de memoria ram y/o disco ssd realizado por TechStore. Debe contemplar una demora de entrega adicional de 72hs luego de realizar el pedido y pago de la misma *',
